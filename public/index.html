@@ -41,7 +41,7 @@
       });
       
       socket.on('connect', () => {
-        
+        socket.emit('message', 'user connect')
       })
 
       socket.on('message', (msg) => {
