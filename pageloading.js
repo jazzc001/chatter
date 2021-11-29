@@ -1,6 +1,6 @@
 var percent = 0;
 function eatCount() {
-  $(".monsterText").html("WE ARE<br>SQUARE<br>MONSTER");
+  $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 }
 
 var timer = setInterval(function () {
