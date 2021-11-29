@@ -1,4 +1,5 @@
-const app = require('express')();
+const express = require('express');
+const app = express()
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 const port = 3000;
@@ -45,6 +46,8 @@ const eatCount = () => {
         })
     })
 }
+
+
 
 const timer = setInterval(() => {
   let percent = 0;
