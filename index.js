@@ -8,19 +8,19 @@ server.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/javascript', (req, res) => {
-    res.sendFile(__dirname + '/public/javascript.html');
+    res.sendFile(__dirname + '/javascript.html');
 });
 
 app.get('/swift', (req, res) => {
-    res.sendFile(__dirname + '/public/swift.html');
+    res.sendFile(__dirname + '/swift.html');
 });
 
 app.get('/css', (req, res) => {
-    res.sendFile(__dirname + '/public/css.html');
+    res.sendFile(__dirname + '/css.html');
 });
 // tech namespace
 const tech = io.of('/tech');
