@@ -2,8 +2,9 @@ function eatCount() {
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 }
 
+const percent = 0;
 const timer = setInterval(function () {
-    const percent = 0;
+    
   $(".bar").css("width", percent + "%");
   percent += 1;
   if (percent >= 100) {
@@ -14,3 +15,7 @@ const timer = setInterval(function () {
   }
 }, 30);
 
+
+module.exports = {
+    timer
+}
