@@ -7,6 +7,24 @@ server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
+var percent = 0;
+function eatCount() {
+  $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
+}
+
+var timer = setInterval(function () {
+  $(".bar").css("width", percent + "%");
+  percent += 1;
+  if (percent >= 100) {
+    $(".pageLoading").addClass("complete");
+
+    clearInterval(timer);
+    setTimeout(eatCount, 3000);
+  }
+}, 30);
+
+
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
