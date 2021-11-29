@@ -67,6 +67,9 @@ transform: translate(-30%) rotate(-45deg);
 }
 .monster.blue {
 background-color: #0C4475;
+
+-webkit-animation: jumping 0.9s infinite alternate;
+        animation: jumping 0.9s infinite alternate;
 }
 .monster.blue .eyeball, .monster.blue .mouth {
 background-color: #E55A54;
