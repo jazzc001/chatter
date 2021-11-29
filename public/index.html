@@ -33,15 +33,18 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      const socket = io();
+      const room = 'javascript';
+      const socket = io('/tech');
       $('form').submit(() => {
-        socket.emit('message', $('#m').val());
+        let msg = $('#m').val()
+        socket.emit('message', {msg, room});
         $('#m').val(''); // we are going to empty the form here
         return false;
       });
       
       socket.on('connect', () => {
-        socket.emit('message', 'user connect')
+        // emiting to everybody
+        socket.emit('join', {room: room});
       })
 
       socket.on('message', (msg) => {
