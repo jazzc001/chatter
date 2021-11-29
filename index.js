@@ -7,8 +7,8 @@ server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-const percent = 0;
-const eatCount = ()=>{
+let percent = 0;
+const eatCount = () => {
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 
     app.get('/', (req, res) => {
