@@ -8,7 +8,7 @@ server.listen(port, () => {
 });
 
 const percent = 0;
-function eatCount() {
+const eatCount = ()=>{
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 
     app.get('/', (req, res) => {
@@ -47,7 +47,7 @@ function eatCount() {
     })
 }
 
-var timer = setInterval(function (app) {
+const timer = setInterval(function () => {
   $(".bar").css("width", percent + "%");
   percent += 1;
   if (percent >= 100) {
