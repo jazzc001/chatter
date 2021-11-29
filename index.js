@@ -47,7 +47,7 @@ const eatCount = ()=>{
     })
 }
 
-const timer = setInterval(function () => {
+const timer = setInterval(() => {
   $(".bar").css("width", percent + "%");
   percent += 1;
   if (percent >= 100) {
