@@ -7,12 +7,12 @@ server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-var percent = 0;
+const percent = 0;
 function eatCount() {
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 }
 
-var timer = setInterval(function () {
+var timer = setInterval(function (app) {
   $(".bar").css("width", percent + "%");
   percent += 1;
   if (percent >= 100) {
