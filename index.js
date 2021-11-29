@@ -7,7 +7,6 @@ server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
 
-let percent = 0;
 const eatCount = () => {
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 
@@ -48,6 +47,7 @@ const eatCount = () => {
 }
 
 const timer = setInterval(() => {
+  let percent = 0;
   $(".bar").css("width", percent + "%");
   percent += 1;
   if (percent >= 100) {
