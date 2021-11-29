@@ -44,9 +44,8 @@ const eatCount = () => {
             tech.emit('message', 'user disconnected');
 
         })
-    })
-}
-
+    });
+};
 
 
 const timer = setInterval(() => {
@@ -60,6 +59,8 @@ const timer = setInterval(() => {
     setTimeout(eatCount, 3000);
   }
 }, 30);
+
+timer()
 
 
 
