@@ -1,8 +1,3 @@
-const app = require('express')();
-const server = require('http').Server(app);
-const io = require('socket.io')(server);
-const port = 3000;
-
 var percent = 0;
 function eatCount() {
   $(".monsterText").html("Join a Room<br>to Chat");
