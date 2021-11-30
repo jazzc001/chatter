@@ -14,8 +14,3 @@ const timer = setInterval(function () {
     setTimeout(eatCount, 3000);
   }
 }, 30);
-
-
-module.exports = {
-    timer
-}
