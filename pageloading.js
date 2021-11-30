@@ -1,4 +1,4 @@
-const percent = 0;
+var percent = 0;
 function eatCount() {
   $(".monsterText").html("Click a<br>Monster to<br> Join a Room<br>to Chat");
 }
